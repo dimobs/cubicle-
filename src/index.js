@@ -1,8 +1,11 @@
 const express = require('express');
+const path = require('path');
+
 const app = express();
 require('./confing/handlebars')(app);
 //const initHandlebars = require('./confing/handlebars'); //алтернатива е горното 
 
+app.use(express.static(path.resolve(__dirname, './public')));
 
 
 const port = 3000;
