@@ -1,7 +1,7 @@
 const express = require('express');
 
-const cubeControler = require('./controllers/cubeControler');
 const homeController = require('./controllers/homeController');
+const cubeControler = require('./controllers/cubeControler');
 
 const router = express.Router();
 

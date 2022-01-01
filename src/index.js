@@ -3,6 +3,7 @@ const path = require('path');
 const routes = require('./routes');
 
 const app = express();
+app.use(express.urlencoded({extended: true})) //body parser  
 require('./confing/handlebars')(app);
 //const initHandlebars = require('./confing/handlebars'); //алтернатива е горното 
 
