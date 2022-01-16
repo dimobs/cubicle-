@@ -1,0 +1,36 @@
+инсталации
+install vsCode - click to "outher platforms" - "System instaler 64bit"
+
+npm init -y //пакидж Дейсън файл
+npm i -E express
+npm install -g nodemon -  рестаритра сърва автоматично след сейф;
+nodemon --ignore models/data.json - ще записва без да рестартирва сървъра 
+за автоматично стартиране: package.json("scripts":{  "start": "nodemon index.js"} - в конзолата (npm start) ще записва без да рестартирва сървъра (в конзолатa():npm run start)
+за автоматично стартиране: package.json("scripts":{nodemon --ignore models/data.json} - ще записва без да рестартирва сървъра (в конзолатa():npm run start)
+
+npm i - сваля всички депенденсита, от даден проект 
+npm init -y //пакидж Дейсън файл
+npm i -E express express-handlebars
+Prettier for Handlebars - екстенжън от конзолата на vsCode
+npm i -E body-parser - за запазване на данните 
+npm install lodash - библиотека подпомагаща итерирането
+npm i express-session - сесия към експрес
+npm install bcrypt за криптиране на паролата
+npm install jsonwebtoken - съдържа данни за id, username, кога изтича...
+npm i jsonwebtoken bcrypt cookie-parser - 7ma tema
+app.use(express.urlencoded({extended: true}); - позволява да прочита FormData;
+npm i mongoose
+npm remove uniqid --save
+
+----------------------------------------------------
+vsc => ctrl+shift+p => "Preferences: Configure User Snippets", отваря се javascript.json, добавяме:
+	"Request Listener": {
+		"prefix": "req",
+		"body": [
+			"(req, res) => {",
+			"    $1", //$1 къде искаме да застане курсора
+			"}"
+		],
+		"description": "Create request listener"
+	}
+--------------------------------------------------------------
